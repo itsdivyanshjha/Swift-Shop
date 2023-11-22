@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  productservice:
+    image: productservice
+    ports:
+      - "8081:8080"  # Map the container's port 8080 to host port 8081
+
+  orderservice:
+    image: orderservice
+    ports:
+      - "8082:8080"  # Map the container's port 8080 to host port 8082
+
+  userservice:
+    image: userservice
+    ports:
+      - "8083:8080"  # Map the container's port 8080 to host port 8083
